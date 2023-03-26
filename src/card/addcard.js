@@ -132,16 +132,7 @@ export default function App() {
                     onChange={(e) => { setForm({ ...form, cardExpiration: e.target.value }) }}
                   />
                   {formErrors.cardExpiration && <p style={{ color: 'red' }}>*{formErrors.cardExpiration}</p>}
-                </MDBCol>
-                <MDBCol size="2">
-                  <MDBInput
-                    label="CVV"
-                    id="form6"
-                    type="password"
-                    size="lg"
-                    placeholder="CVV"
-                  />
-                </MDBCol>
+                </MDBCol>         
               </MDBRow>
               <MDBBtn
                 color="success"
@@ -149,7 +140,7 @@ export default function App() {
                 block
                 onClick={(e) => handleSubmit(e)}
               >
-                Add card
+                Create card
               </MDBBtn>
             </MDBCardBody>
           </MDBCard>
